@@ -1,0 +1,10 @@
+// script.js
+document.getElementById('appointment-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    // Masquer le formulaire et afficher le message de confirmation
+    document.getElementById('appointment-form').style.display = 'none';
+    document.getElementById('confirmation').style.display = 'block';
+    
+    // Optionnellement, vous pouvez envoyer les données du formulaire à un serveur ici avec fetch ou XMLHttpRequest
+});

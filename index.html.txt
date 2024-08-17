@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabinet Dentaire - Prise de Rendez-vous</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Cabinet Dentaire</h1>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#appointment">Prendre Rendez-vous</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container">
+                <h2>Bienvenue au Cabinet Dentaire</h2>
+                <p>Nous offrons des services de soins dentaires de qualité pour toute la famille. Réservez votre rendez-vous en ligne facilement.</p>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h2>Nos Services</h2>
+                <ul>
+                    <li>Examen dentaire régulier</li>
+                    <li>Nettoyage et détartrage</li>
+                    <li>Blanchiment des dents</li>
+                    <li>Traitement des caries</li>
+                    <li>Orthodontie</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="appointment">
+            <div class="container">
+                <h2>Prendre Rendez-vous</h2>
+                <form id="appointment-form">
+                    <label for="name">Nom complet :</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Numéro de téléphone :</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="date">Date du rendez-vous :</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Heure du rendez-vous :</label>
+                    <input type="time" id="time" name="time" required>
+
+                    <button type="submit">Réserver maintenant</button>
+                </form>
+                <div id="confirmation" style="display: none;">
+                    <h3>Merci !</h3>
+                    <p>Votre rendez-vous a été réservé avec succès. Nous vous contacterons bientôt pour confirmer les détails.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Adresse : 123 Rue de la Santé, Paris</p>
+                <p>Téléphone : 01 23 45 67 89</p>
+                <p>Email : contact@cabinetdentaire.fr</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Cabinet Dentaire - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
